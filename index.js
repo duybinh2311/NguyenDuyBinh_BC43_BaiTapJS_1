@@ -17,20 +17,15 @@ btn_1.onclick = function baiTap_1() {
 var btn_2 = document.getElementsByClassName('btn')[1]
 btn_2.onclick = function baiTap_2() {
   // input
-  var soThuc_1 = document.getElementById('soThuc_1').value
-  var soThuc_2 = document.getElementById('soThuc_2').value
-  var soThuc_3 = document.getElementById('soThuc_3').value
-  var soThuc_4 = document.getElementById('soThuc_4').value
-  var soThuc_5 = document.getElementById('soThuc_5').value
+  var soThuc_1 = Number(document.getElementById('soThuc_1').value)
+  var soThuc_2 = Number(document.getElementById('soThuc_2').value)
+  var soThuc_3 = Number(document.getElementById('soThuc_3').value)
+  var soThuc_4 = Number(document.getElementById('soThuc_4').value)
+  var soThuc_5 = Number(document.getElementById('soThuc_5').value)
 
   // process
   var giaTriTrungBinh =
-    (Number(soThuc_1) +
-      Number(soThuc_2) +
-      Number(soThuc_3) +
-      Number(soThuc_4) +
-      Number(soThuc_5)) /
-    5
+    (soThuc_1 + soThuc_2 + soThuc_3 + soThuc_4 + soThuc_5) / 5
 
   // output
   var ketQuaBaiTap_2 = document.getElementsByClassName('ketQuaBaiTap')[1]
